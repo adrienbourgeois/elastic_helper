@@ -4,8 +4,12 @@ module ElasticHelper
       raise NotImplementedError
     end
 
-    def build(query)
-      block.call(query)
+    def build(query=nil)
+      if query
+        block.call(query)
+      else
+        Jbuilder.new{ |query| block.call(query) }
+      end
     end
   end
 end

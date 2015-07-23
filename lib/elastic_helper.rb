@@ -1,4 +1,5 @@
 require "jbuilder"
+require "json"
 
 require "elastic_helper/version"
 require "elastic_helper/abstract_query"

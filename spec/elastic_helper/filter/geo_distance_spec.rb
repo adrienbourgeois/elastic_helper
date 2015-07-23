@@ -9,8 +9,8 @@ RSpec.describe ElasticHelper::Filter::GeoDistance do
     subject { ElasticHelper::Filter::GeoDistance.new(lat: lat, lon: lon, distance: distance) }
 
     it "builds the query" do
-      query = Jbuilder.new { |query| subject.build(query) }.target!
-      expect(JSON.parse(query)).to eq({"geo_distance"=>{"distance"=>"15km", "location"=>{"lat"=>33.865, "lon"=>151.2094}}})
+      query = JSON.parse(subject.build(query).target!)
+      expect(query).to eq({"geo_distance"=>{"distance"=>"15km", "location"=>{"lat"=>33.865, "lon"=>151.2094}}})
     end
   end
 end
