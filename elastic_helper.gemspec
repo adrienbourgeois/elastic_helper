@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Adrien Bourgeois"]
   spec.email         = ["adrienfrancis.bourgeois@gmail.com"]
   spec.summary       = %q{Write elasticsearch query in a blink!}
-  spec.description   = %q{A set of helpers to easily write elasticsearch query. Work great on top of elasticsearch-rails}
+  spec.description   = %q{A set of helpers to easily write elasticsearch queries. Work great on top of elasticsearch-rails}
   spec.homepage      = ""
   spec.license       = "MIT"
 
