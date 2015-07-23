@@ -19,6 +19,7 @@
 
 
 require 'pry'
+require 'elastic_helper'
 
 
 RSpec.configure do |config|
